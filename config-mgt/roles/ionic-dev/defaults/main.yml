@@ -1,0 +1,9 @@
+repo_name: ionic-learning-box
+git_repo_url: https://github.com/bwnyasse/ionic-learning-box.git
+git_repo_checkout_dest: /srv/ionic-learning-box
+git_repo_ionic_src: /srv/ionic-learning-box/ionic-app
+git_branch: master
+git_sha1: 209285c824fc1e51175935065c785c4f0b4fbd15
+
+docker_image: bwnyasse/android-cordova-ionic-dev
+container_name: ionic_dev_container

@@ -1,0 +1,4 @@
+- hosts: vps
+
+  roles:
+    - { role: ionic-dev, tags: ionic-dev }
