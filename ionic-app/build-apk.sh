@@ -6,9 +6,6 @@
 ################################################################################
 
 DOCKER_IMAGE='bwnyasse/android-cordova-ionic-dev'
-CONTAINER_NAME='ionic_dev_container'
-ACTION='serve'
-
 
 #                       _            
 #                      (_)           
@@ -19,12 +16,6 @@ ACTION='serve'
 #
 #
 
-if [[  "$(docker ps -q -f name=$CONTAINER_NAME)" ]]; then
-    docker stop $CONTAINER_NAME
-fi
-
-docker run --name $CONTAINER_NAME \
-            -d \
-            -p 9999:8100 \
+docker run  -it --rm \
             -v $PWD:/src \
-            $DOCKER_IMAGE ionic-dev.sh $ACTION
+            $DOCKER_IMAGE ionic-dev.sh build
