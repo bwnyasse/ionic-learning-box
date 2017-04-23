@@ -9,4 +9,7 @@ In this repo :
 		
 		ionic start ionic-app tutorial --v2
 
+ - **config-mgt** : folder with the config managment by ansible to serve ionic-app in the browser
+
+ - **d-images**: folder with the docker files 
 
