@@ -49,14 +49,14 @@ ensureMandatoryDirectories() {
 ## ----
 ## 
 ## Entry point definition
-## @param path to directory containing the sources to build
 ##
 ionicdevbuild::performBuild() {
 
-    local srcPath 
 
     # FIXME : In the following line, I assumed that the build will be performed in the root source directory
-    cd $srcPath
+    cd /src
+
+    echo $pwd 
 
     log_info "Ensure to disable cordova telemetry"
     cordova telemetry off

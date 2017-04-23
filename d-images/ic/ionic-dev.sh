@@ -42,9 +42,7 @@ serve_app() {
 ##
 build_app() {
 
-    local srcDir='/src' 
-
-    ionicdevbuild::performBuild $srcDir
+    ionicdevbuild::performBuild
 }
 
 
